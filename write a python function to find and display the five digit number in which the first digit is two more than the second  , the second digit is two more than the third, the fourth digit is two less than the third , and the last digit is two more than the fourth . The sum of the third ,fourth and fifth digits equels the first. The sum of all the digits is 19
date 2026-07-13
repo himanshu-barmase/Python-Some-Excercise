@@ -1,0 +1,14 @@
+def find_number():
+    for c in range(10):
+        b = c + 2
+        a = b + 2
+        d = c - 2
+        e = d + 2
+
+        # Check if all digits are valid (0-9)
+        if 0 <= a <= 9 and 0 <= b <= 9 and 0 <= c <= 9 and 0 <= d <= 9 and 0 <= e <= 9:
+
+            if (c + d + e == a) and (a + b + c + d + e == 19):
+                print("The five-digit number is:", a, b, c, d, e, sep="")
+
+find_number()
