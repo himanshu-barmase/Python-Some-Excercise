@@ -1,0 +1,11 @@
+num = int(input("Enter a number: "))
+
+while True:
+    rev = int(str(num)[::-1])
+
+    if num == rev:
+        print("Palindrome found:", num)
+        break
+
+    num = num + rev
+    print("New number:", num)
