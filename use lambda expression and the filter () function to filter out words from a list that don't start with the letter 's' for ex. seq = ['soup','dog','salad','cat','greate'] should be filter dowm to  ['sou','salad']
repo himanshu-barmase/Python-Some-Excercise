@@ -1,0 +1,5 @@
+seq = ['soup', 'dog', 'salad', 'cat', 'great']
+
+result = list(filter(lambda word: word.startswith('s'), seq))
+
+print(result)
